@@ -43,4 +43,4 @@ if __name__ == "__main__":
     print(*sorted_manga_listings, sep='\n')
     df = pd.DataFrame.from_dict(manga_listings)
     df.sort_values(by="Price")
-    #df.to_csv("ebay_manga_postings.csv")
+    df.to_csv("ebay_manga_postings.csv")
