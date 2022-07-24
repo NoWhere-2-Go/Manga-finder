@@ -52,7 +52,7 @@ if __name__ == "__main__":
         title_tags = soup.find_all('h3', class_='s-item__title')
         price_tags = soup.find_all('span', class_='s-item__price')
 
-        # lets store all manga listings inside a list
+        # lets store all manga listings inside a list of dictionaries
         for i in range(1, len(title_tags)):
             manga_listings.append({'Title': title_tags[i].text, 'Price': float(price_tags[i].text[1:])})
 
